@@ -42,6 +42,8 @@ Nest.js의 기본적인 구조는 위와 같다.
 
 [블로그 작성](https://blog.naver.com/dilrong/222373919928)
 
+### DTO
+
 ## 참고
 
 [Nest.js Docs](https://docs.nestjs.com/)
