@@ -42,7 +42,15 @@ Nest.js의 기본적인 구조는 위와 같다.
 
 [블로그 작성](https://blog.naver.com/dilrong/222373919928)
 
-### DTO
+### DTO & Validation
+
+Data Transfer Object 정보를 교환하는데 타입을 체크하기 위한 스키마이다.
+DTO는 값을 검증만 하고 처리는 하지 않는다.
+그래서 Class Validation를 이용하여 검증에 대한 처리를 할 수 있다.
+
+```
+npm i --save class-validator class-transformer
+```
 
 ## 참고
 
