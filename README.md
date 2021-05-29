@@ -52,6 +52,19 @@ DTO는 값을 검증만 하고 처리는 하지 않는다.
 npm i --save class-validator class-transformer
 ```
 
+전역에 유효성 검사를 하기 위해서 전역 범위 파이프를 설정한다.
+
+```
+  app.useGlobalPipes(new ValidationPipe({
+  	whitelist: true,
+    forbidNonWhitelisted: true,
+    transform: true,
+  }));
+```
+
+`@nestjs/mapped-types`을 이용하면 extends를 이용하여 상속 데이터를 선택적으로 만들 수 있다.
+데아터의 생성과 업데이트는 데이터는 대부분 동일하게 사용되는데, 이를 이용하면 중복 코드를 줄일 수 있다.
+
 ## 참고
 
 [Nest.js Docs](https://docs.nestjs.com/)
